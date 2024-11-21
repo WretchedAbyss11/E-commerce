@@ -12,30 +12,30 @@
 <section id="landing">
 <nav> 
     <div class="nav__container">
-        <img class="logo" src="/E-commerce/assets/Library.svg" alt="">
+        <img class="logo" src="/assets/Library.svg" alt="">
         <ul>
             <li>
-            <a href="a" class="nav__link nav__link-effect">Home</a>
-            <a href="a" class="nav__link nav__link-effect">Contact</a>
+            <a href="#landing" class="nav__link nav__link-effect">Home</a>
+            <a href="" class="nav__link nav__link-effect no-cursor">Contact</a>
             <a href="#features" class="nav__link nav__link--primary">Books</a>
             </li>
         </ul>
-        <button class="btn__menu" onclick="openMenu()">
+        <button class="btn__menu" onclick="openmenu()">
             <i class="fas fa-bars"></i>
         </button>
         <div class="menu__backdrop">
-        <button class="btn__menu--close" onclick="closeMenu()">
+        <button class="btn__menu--close" onclick="closemenu()">
             <i class="fas fa-times"></i>
         </button>
         <ul class="menu__links">
             <li class="menu__list">
-                <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+                <a href="#landing" class="menu__link" onclick="closemenu()">Home</a>
             </li>
             <li class="menu__list">
-                <a href="#features" class="menu__link">Books</a>
+                <a href="#features" class="menu__link" onclick="closemenu()">Books</a>
             </li>
             <li class="menu__list">
-                <a class="menu__link no-cursor">Contact</a>
+                <a class="menu__link no-cursor" onclick="closemenu()">Contact</a>
             </li>
         </ul>
     </div>
@@ -49,7 +49,7 @@
         </div>
         <row class="btn__row"><button class="btn"><a href="#features" class="btn">Browse Books</a></button></row>
         <figure class="header__img--wrapper">
-            <img src="/E-commerce/assets/Undraw_Books.svg" alt="girl reading a book, atop a pile of books with leaves falling around her to symbolize immersion into the book">
+            <img src="/assets/Undraw_Books.svg" alt="girl reading a book, atop a pile of books with leaves falling around her to symbolize immersion into the book">
         </figure>
     </div>
 </header>
@@ -339,7 +339,7 @@
         <div class="row">
             <a href="#">
             <figure class="footer__logo">
-                <img class="footer__logo--img" src="/E-commerce/assets/Library.svg" alt="Library 1995">
+                <img class="footer__logo--img" src="/assets/Library.svg" alt="Library 1995">
             </figure>
             </a>
             <div class="footer__list">
