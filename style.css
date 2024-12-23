@@ -288,7 +288,7 @@ html {
 	margin-bottom: 8px;
 }
 .book__price {
-
+	font-weight: 700;
 }
 .book__price--full {
 	text-decoration: line-through;
@@ -375,5 +375,50 @@ filter: grayscale(1) invert(1);
 	}
 	i {
 		font-size: 8px;
+	}
+}
+
+/*
+	BOOKS SALE PAGE
+*/
+
+.books__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 24px;
+}
+
+.books__header--title {
+	margin-bottom: 0;
+}
+
+.books__loading--spinner {
+	display: none;
+}
+
+.books__loading .books__loading--spinner {
+	display: block;
+}
+
+.books__loading {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 60px;
+	font-size: 60px;
+	color: blueviolet;
+}
+
+.fa-spinner {
+	animation: rotate 600ms infinite linear;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
 	}
 }
